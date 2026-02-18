@@ -1,0 +1,10 @@
+services:
+  database:
+    image: postgres:16-alpine
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: bdadmin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: dsitest
